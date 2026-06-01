@@ -1,12 +1,4 @@
 import { motion } from "framer-motion";
-import {
-  BowIcon,
-  CherriesIcon,
-  FlowerIcon as RoseIcon,
-  StarfishIcon,
-  LemonIcon,
-  ShellIcon,
-} from "./Doodles";
 
 export default function Hero() {
   return (
@@ -148,31 +140,7 @@ export default function Hero() {
                 </div>
               </motion.div>
 
-              {/* Hand-drawn doodles — matching the reference composition */}
-              <CherriesIcon
-                className="absolute text-burgundy z-50"
-                style={{ top: "16%", left: "0%", width: "11%", transform: "rotate(-10deg)" }}
-              />
-              <BowIcon
-                className="absolute text-burgundy z-50"
-                style={{ top: "-4%", left: "38%", width: "16%", transform: "rotate(2deg)" }}
-              />
-              <RoseIcon
-                className="absolute text-burgundy z-50"
-                style={{ top: "12%", right: "-2%", width: "13%", transform: "rotate(4deg)" }}
-              />
-              <StarfishIcon
-                className="absolute text-burgundy z-50"
-                style={{ top: "42%", left: "28%", width: "11%", transform: "rotate(-8deg)" }}
-              />
-              <LemonIcon
-                className="absolute text-burgundy z-50"
-                style={{ bottom: "0%", left: "4%", width: "13%", transform: "rotate(-6deg)" }}
-              />
-              <ShellIcon
-                className="absolute text-burgundy z-50"
-                style={{ top: "60%", right: "8%", width: "12%", transform: "rotate(4deg)" }}
-              />
+              {/* Hand-drawn doodles removed by request */}
             </div>
           </div>
         </div>
