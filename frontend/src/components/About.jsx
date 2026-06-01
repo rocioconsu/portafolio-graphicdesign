@@ -34,11 +34,11 @@ export default function About() {
 
           {/* Right portrait */}
           <div className="col-span-12 md:col-span-3 relative">
-            <div className="relative aspect-[3/4] overflow-hidden bg-pink">
+            <div className="relative aspect-[3/4] overflow-hidden">
               <img
                 src="/assets/portrait1.jpg"
                 alt="Rocío Consuegra portrait"
-                className="w-full h-full object-cover mix-blend-multiply"
+                className="w-full h-full object-cover"
                 data-testid="about-portrait"
               />
             </div>

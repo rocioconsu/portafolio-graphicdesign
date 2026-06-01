@@ -64,85 +64,109 @@ export default function Hero() {
           </div>
 
           {/* Right: moodboard collage */}
-          <div className="col-span-12 lg:col-span-6 relative min-h-[520px] md:min-h-[680px]">
-            {/* Image 1 — main portrait (largest, top-right) */}
+          <div className="col-span-12 lg:col-span-6 relative min-h-[560px] md:min-h-[700px]">
+            {/* Soft pink backing pad to unify the moodboard */}
+            <div className="hidden md:block absolute inset-x-2 inset-y-4 bg-pink/30 rounded-sm -rotate-1" aria-hidden />
+
+            {/* Image 1 — main portrait BW (top-right, largest) */}
             <motion.div
-              initial={{ opacity: 0, y: 30, rotate: -3 }}
-              animate={{ opacity: 1, y: 0, rotate: -4 }}
+              initial={{ opacity: 0, y: 30, rotate: -5 }}
+              animate={{ opacity: 1, y: 0, rotate: -3 }}
               transition={{ duration: 1, delay: 0.15 }}
-              className="absolute top-0 right-2 md:right-6 w-[50%] md:w-[54%] aspect-[3/4] overflow-hidden shadow-[0_20px_60px_-20px_rgba(122,24,54,0.35)] z-20"
+              className="absolute top-0 right-2 md:right-4 w-[48%] md:w-[50%] bg-white p-2 md:p-2.5 pb-6 md:pb-8 shadow-[0_22px_50px_-22px_rgba(122,24,54,0.45)] z-30"
             >
-              <img
-                src="/assets/portrait3.jpg"
-                alt="Rocío portrait"
-                className="w-full h-full object-cover"
-                data-testid="hero-portrait-main"
-              />
-              <span className="absolute bottom-3 left-3 text-[10px] uppercase tracking-[0.25em] text-ivory/95 font-sans bg-burgundy/85 px-2 py-1">
-                Plaza de España
+              <div className="aspect-[3/4] overflow-hidden">
+                <img
+                  src="/assets/portrait3.jpg"
+                  alt="Rocío portrait"
+                  className="w-full h-full object-cover"
+                  data-testid="hero-portrait-main"
+                />
+              </div>
+              <span className="absolute bottom-1.5 left-2 text-[9px] uppercase tracking-[0.25em] text-burgundy font-sans">
+                Plaza de España · 24
               </span>
             </motion.div>
 
-            {/* Image 2 — new (portrait4) top-left small */}
+            {/* Image 2 — portrait4 (top-left small) */}
             <motion.div
-              initial={{ opacity: 0, y: 30, rotate: 4 }}
-              animate={{ opacity: 1, y: 0, rotate: 3 }}
+              initial={{ opacity: 0, y: 30, rotate: 6 }}
+              animate={{ opacity: 1, y: 0, rotate: 4 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="absolute top-6 left-2 md:left-0 w-[36%] md:w-[34%] aspect-[4/5] overflow-hidden z-10"
+              className="absolute top-4 md:top-8 left-0 md:left-2 w-[36%] md:w-[34%] bg-white p-2 pb-5 shadow-[0_18px_40px_-20px_rgba(122,24,54,0.4)] z-20"
             >
-              <img
-                src="/assets/portrait4.jpg"
-                alt="Rocío"
-                className="w-full h-full object-cover"
-                data-testid="hero-portrait-2"
-              />
+              <div className="aspect-[4/5] overflow-hidden">
+                <img
+                  src="/assets/portrait4.jpg"
+                  alt="Rocío"
+                  className="w-full h-full object-cover"
+                  data-testid="hero-portrait-2"
+                />
+              </div>
+              <span className="absolute bottom-1 left-2 text-[9px] uppercase tracking-[0.25em] text-burgundy font-sans">
+                Costa · summer
+              </span>
             </motion.div>
 
-            {/* Image 3 — portrait2 (sand floor) bottom-right */}
+            {/* Image 3 — portrait5 sunset (middle-left, visible) */}
             <motion.div
               initial={{ opacity: 0, y: 30, rotate: -8 }}
               animate={{ opacity: 1, y: 0, rotate: -6 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="absolute bottom-2 right-10 md:right-24 w-[40%] md:w-[36%] aspect-square overflow-hidden z-30"
+              className="absolute top-[44%] md:top-[46%] left-2 md:left-6 w-[38%] md:w-[36%] bg-white p-2 pb-5 shadow-[0_18px_40px_-20px_rgba(122,24,54,0.4)] z-30"
             >
-              <img
-                src="/assets/portrait2.jpg"
-                alt="Rocío"
-                className="w-full h-full object-cover"
-                data-testid="hero-portrait-3"
-              />
+              <div className="aspect-[3/4] overflow-hidden">
+                <img
+                  src="/assets/portrait5.jpg"
+                  alt="Rocío sunset"
+                  className="w-full h-full object-cover"
+                  data-testid="hero-portrait-4"
+                />
+              </div>
+              <span className="absolute bottom-1 left-2 text-[9px] uppercase tracking-[0.25em] text-burgundy font-sans">
+                Golden hour
+              </span>
             </motion.div>
 
-            {/* Image 4 — new (portrait5) bottom-left, on pink block */}
+            {/* Image 4 — portrait2 sand floor (bottom-right) */}
             <motion.div
               initial={{ opacity: 0, y: 30, rotate: 8 }}
-              animate={{ opacity: 1, y: 0, rotate: 6 }}
+              animate={{ opacity: 1, y: 0, rotate: 5 }}
               transition={{ duration: 1, delay: 0.65 }}
-              className="absolute bottom-12 md:bottom-20 left-[28%] md:left-[24%] w-[34%] md:w-[32%] aspect-[3/4] overflow-hidden bg-pink z-10"
+              className="absolute bottom-0 right-6 md:right-16 w-[40%] md:w-[36%] bg-white p-2 pb-5 shadow-[0_18px_40px_-20px_rgba(122,24,54,0.4)] z-30"
             >
-              <img
-                src="/assets/portrait5.jpg"
-                alt="Rocío"
-                className="w-full h-full object-cover mix-blend-multiply"
-                data-testid="hero-portrait-4"
-              />
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src="/assets/portrait2.jpg"
+                  alt="Rocío"
+                  className="w-full h-full object-cover"
+                  data-testid="hero-portrait-3"
+                />
+              </div>
+              <span className="absolute bottom-1 left-2 text-[9px] uppercase tracking-[0.25em] text-burgundy font-sans">
+                Off duty
+              </span>
             </motion.div>
 
-            {/* Scattered hand-drawn doodles */}
-            <PaletteIcon className="absolute top-[2%] left-[26%] w-12 md:w-16 h-12 md:h-16 text-burgundy -rotate-12 z-40" />
-            <BrushIcon className="absolute top-[38%] right-[-2%] w-14 md:w-20 h-14 md:h-20 text-burgundy rotate-[20deg] z-40" />
-            <HeartIcon className="absolute bottom-[18%] right-[2%] w-10 md:w-14 h-10 md:h-14 text-burgundy -rotate-12 z-40" />
-            <ScissorsIcon className="hidden md:block absolute top-[12%] right-[40%] w-12 h-12 text-burgundy rotate-[35deg] z-40" />
-            <PenIcon className="absolute bottom-[2%] left-[6%] w-12 md:w-16 h-12 md:h-16 text-burgundy -rotate-6 z-40" />
-            <StarIcon className="absolute top-[58%] left-[8%] w-8 md:w-10 h-8 md:h-10 text-burgundy rotate-12 z-40" />
-            <FlowerIcon className="hidden md:block absolute bottom-[40%] left-[44%] w-12 h-12 text-burgundy -rotate-[10deg] z-40 opacity-90" />
+            {/* Tape pieces — unify the polaroids */}
+            <span className="hidden md:block absolute top-[-6px] right-[28%] w-14 h-5 bg-butter/85 rotate-[12deg] z-40" aria-hidden />
+            <span className="hidden md:block absolute top-[2%] left-[26%] w-12 h-4 bg-butter/80 -rotate-[10deg] z-40" aria-hidden />
+            <span className="hidden md:block absolute top-[42%] left-[36%] w-12 h-4 bg-butter/80 rotate-[6deg] z-40" aria-hidden />
 
-            {/* Sticker */}
+            {/* Scattered hand-drawn doodles, fewer + better placed */}
+            <PaletteIcon className="absolute top-[2%] left-[42%] w-14 md:w-20 h-14 md:h-20 text-burgundy -rotate-12 z-40" />
+            <BrushIcon className="hidden md:block absolute top-[26%] right-[-2%] w-16 h-16 text-burgundy rotate-[35deg] z-40" />
+            <FlowerIcon className="absolute bottom-[2%] left-[2%] w-16 md:w-24 h-20 md:h-32 text-burgundy -rotate-[10deg] z-40" />
+            <BowIcon className="hidden md:block absolute top-[62%] right-[6%] w-20 h-16 text-burgundy -rotate-6 z-40" />
+            <StarIcon className="absolute top-[40%] right-[44%] w-8 md:w-10 h-8 md:h-10 text-burgundy rotate-12 z-40" />
+            <HeartIcon className="hidden md:block absolute top-[10%] right-[40%] w-10 h-10 text-burgundy -rotate-12 z-40" />
+
+            {/* Sticker label */}
             <motion.div
               initial={{ opacity: 0, scale: 0.85 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.85 }}
-              className="absolute top-2 left-0 md:top-2 md:left-2 bg-butter text-burgundy text-[10px] md:text-[11px] uppercase tracking-[0.25em] px-3 py-1.5 rounded-full font-sans -rotate-6 z-50"
+              className="absolute -top-3 left-0 md:-top-3 md:left-2 bg-butter text-burgundy text-[10px] md:text-[11px] uppercase tracking-[0.25em] px-3 py-1.5 rounded-full font-sans -rotate-6 z-50"
             >
               ✦ Moodboard
             </motion.div>

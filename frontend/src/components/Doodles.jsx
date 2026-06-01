@@ -10,32 +10,57 @@ const stroke = {
 };
 
 export const PaletteIcon = ({ className = "" }) => (
-  <svg viewBox="0 0 100 100" className={className} aria-hidden>
+  <svg viewBox="0 0 110 100" className={className} aria-hidden>
+    {/* palette body */}
     <path
       {...stroke}
-      d="M50 12c-22 1-37 18-36 36 0 11 8 18 17 18 6 0 7-4 11-4 5 0 4 6 11 6 19 0 35-14 35-32C88 22 72 11 50 12z"
+      d="M55 10c-25 0-46 18-46 40 0 13 9 22 20 22 5 0 7-3 7-7 0-5 4-8 9-8 6 0 9 4 10 9 1 6 6 10 13 10 22 0 38-16 38-36 0-17-18-30-51-30z"
     />
-    <circle cx="34" cy="38" r="3.2" fill="currentColor" />
-    <circle cx="48" cy="28" r="3.2" fill="currentColor" />
-    <circle cx="65" cy="35" r="3.2" fill="currentColor" />
-    <circle cx="72" cy="52" r="3.2" fill="currentColor" />
-    <path {...stroke} d="M22 60c-3 5-5 14 1 18 5 3 11-2 14-7" />
+    {/* thumb hole */}
+    <ellipse cx="36" cy="58" rx="6" ry="9" {...stroke} />
+    {/* paint dots */}
+    <circle cx="58" cy="28" r="4" fill="currentColor" />
+    <circle cx="74" cy="36" r="4" fill="currentColor" />
+    <circle cx="82" cy="52" r="4" fill="currentColor" />
+    <circle cx="72" cy="68" r="4" fill="currentColor" />
+    <circle cx="52" cy="44" r="3.5" fill="currentColor" />
+    {/* brush across */}
+    <path {...stroke} d="M2 96l30-30" />
+    <path {...stroke} d="M32 66c2-4 8-6 12-4l4 4-12 12-4-4c-2-2 0-8 0-8z" />
+    <path {...stroke} d="M4 94l8 8" />
   </svg>
 );
 
 export const BowIcon = ({ className = "" }) => (
-  <svg viewBox="0 0 110 80" className={className} aria-hidden>
+  <svg viewBox="0 0 130 110" className={className} aria-hidden>
+    {/* left loop */}
     <path
       {...stroke}
-      d="M55 38c-8-12-22-18-32-10-7 6-3 18 4 22 8 5 20 3 28-4 0 0 1-2 0-8z"
+      d="M62 42 C 44 22, 18 22, 14 38 C 10 54, 30 64, 50 56 C 56 54, 60 50, 62 46 Z"
     />
+    {/* right loop */}
     <path
       {...stroke}
-      d="M55 38c8-12 22-18 32-10 7 6 3 18-4 22-8 5-20 3-28-4 0 0-1-2 0-8z"
+      d="M68 42 C 86 22, 112 22, 116 38 C 120 54, 100 64, 80 56 C 74 54, 70 50, 68 46 Z"
     />
-    <circle cx="55" cy="38" r="4.5" {...stroke} />
-    <path {...stroke} d="M48 44c-5 9-10 18-15 26" />
-    <path {...stroke} d="M62 44c5 9 10 18 15 26" />
+    {/* center knot */}
+    <path
+      {...stroke}
+      d="M58 38 C 55 44, 55 52, 58 58 C 64 60, 72 60, 76 56 C 78 50, 78 44, 76 40 C 70 36, 62 36, 58 38 Z"
+    />
+    {/* left dangling ribbon with curl */}
+    <path
+      {...stroke}
+      d="M60 58 C 52 70, 46 84, 40 96 C 38 100, 36 102, 34 98"
+    />
+    {/* right dangling ribbon with curl */}
+    <path
+      {...stroke}
+      d="M72 58 C 80 70, 88 82, 94 94 C 96 98, 98 100, 100 96"
+    />
+    {/* small ribbon flicks at the ends */}
+    <path {...stroke} d="M40 96 C 44 94, 50 96, 50 92" />
+    <path {...stroke} d="M94 94 C 90 92, 84 94, 84 90" />
   </svg>
 );
 
@@ -57,15 +82,42 @@ export const StarIcon = ({ className = "" }) => (
 );
 
 export const FlowerIcon = ({ className = "" }) => (
-  <svg viewBox="0 0 100 100" className={className} aria-hidden>
-    <circle cx="50" cy="38" r="6" {...stroke} />
-    <path {...stroke} d="M50 32c-2-8 1-16 8-18 4 5 2 14-4 18" />
-    <path {...stroke} d="M50 32c2-8-1-16-8-18-4 5-2 14 4 18" />
-    <path {...stroke} d="M44 38c-8 0-15 5-15 13 6 2 14-2 17-7" />
-    <path {...stroke} d="M56 38c8 0 15 5 15 13-6 2-14-2-17-7" />
-    <path {...stroke} d="M50 44v40" />
-    <path {...stroke} d="M50 64c4-4 11-6 16-4" />
-    <path {...stroke} d="M50 74c-5-3-12-3-17 0" />
+  // Hand-drawn rose: spiral bud + curved outer petals + stem with leaf
+  <svg viewBox="0 0 100 130" className={className} aria-hidden>
+    {/* spiral bud (concentric inward curls) */}
+    <path
+      {...stroke}
+      d="M50 36 C 56 36, 60 32, 58 28 C 55 24, 48 24, 44 28 C 40 33, 42 40, 48 42 C 56 44, 64 40, 64 32 C 64 22, 54 18, 46 20 C 36 23, 32 34, 38 42 C 46 52, 62 50, 68 40"
+    />
+    {/* outer left petal */}
+    <path
+      {...stroke}
+      d="M38 30 C 26 28, 20 38, 24 48 C 28 56, 38 58, 44 52"
+    />
+    {/* outer right petal */}
+    <path
+      {...stroke}
+      d="M62 30 C 74 28, 80 38, 76 48 C 72 56, 62 58, 56 52"
+    />
+    {/* bottom petal cup */}
+    <path
+      {...stroke}
+      d="M34 50 C 30 60, 38 68, 50 68 C 62 68, 70 60, 66 50"
+    />
+    {/* sepals */}
+    <path {...stroke} d="M44 64 C 42 70, 44 74, 50 74 C 56 74, 58 70, 56 64" />
+    {/* stem */}
+    <path {...stroke} d="M50 74 C 50 90, 50 110, 50 124" />
+    {/* leaf left */}
+    <path
+      {...stroke}
+      d="M50 92 C 40 88, 30 90, 26 100 C 34 104, 46 100, 50 96"
+    />
+    {/* leaf right */}
+    <path
+      {...stroke}
+      d="M50 108 C 60 104, 72 106, 76 116 C 68 120, 56 116, 50 112"
+    />
   </svg>
 );
 
