@@ -43,13 +43,6 @@ export default function About() {
                   data-testid="about-portrait"
                 />
               </div>
-              <p className="mt-2 text-center text-[10px] uppercase tracking-[0.25em] text-burgundy font-sans">
-                Rocío · Studio
-              </p>
-            </div>
-            <div className="mt-3 flex justify-between items-center text-[10px] uppercase tracking-[0.25em] text-charcoal/60 font-sans">
-              <span>Rocío C.</span>
-              <span className="tabular">— ph. self</span>
             </div>
           </div>
         </div>
