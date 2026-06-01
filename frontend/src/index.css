@@ -88,7 +88,7 @@ body {
 .marquee-track {
     display: flex;
     width: max-content;
-    animation: marquee 28s linear infinite;
+    animation: marquee 55s linear infinite;
     will-change: transform;
 }
 @keyframes marquee-rev {
@@ -98,7 +98,7 @@ body {
 .marquee-track-rev {
     display: flex;
     width: max-content;
-    animation: marquee-rev 40s linear infinite;
+    animation: marquee-rev 60s linear infinite;
     will-change: transform;
 }
 

@@ -1,4 +1,4 @@
-const phrase = "AVAILABLE FOR COMMISSIONS ✦ LET'S CREATE ✦ STUDIO ROCÍO CONSUEGRA ✦ ";
+const phrase = "AVAILABLE FOR COMMISSIONS ✦ LET'S CREATE ✦ ";
 
 const contacts = [
   { label: "Email", value: "rocioconsuegra-studio@gmail.com", href: "mailto:rocioconsuegra-studio@gmail.com", display: "rocioconsuegra-studio@gmail.com" },
@@ -8,7 +8,7 @@ const contacts = [
 ];
 
 export default function Contact() {
-  const repeated = Array.from({ length: 6 }).map(() => phrase).join("");
+  const repeated = Array.from({ length: 3 }).map(() => phrase).join("");
   return (
     <section id="contact" data-testid="contact-section" className="bg-burgundy text-ivory pt-24 md:pt-36 overflow-hidden relative">
       <div className="mx-auto max-w-[1480px] px-6 md:px-10">

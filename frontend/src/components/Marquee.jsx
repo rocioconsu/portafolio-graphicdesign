@@ -1,7 +1,7 @@
-const phrase = "TURNING IDEAS INTO VISUAL EXPERIENCES ✦ DESIGN WITH PURPOSE ✦ CREATIVITY THROUGH EXPLORATION ✦ VISUAL STORYTELLING ✦ ";
+const phrase = "TURNING IDEAS INTO VISUAL EXPERIENCES ✦ VISUAL STORYTELLING ✦ ";
 
 export default function Marquee() {
-  const repeated = Array.from({ length: 6 }).map(() => phrase).join("");
+  const repeated = Array.from({ length: 3 }).map(() => phrase).join("");
   return (
     <section
       data-testid="marquee-ribbon"

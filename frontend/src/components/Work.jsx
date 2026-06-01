@@ -48,9 +48,9 @@ function Project({ p, index }) {
   return (
     <article
       data-testid={`project-${p.n}`}
-      className={`${p.bg} relative overflow-hidden`}
+      className={`${p.bg} relative overflow-hidden min-h-screen flex items-center`}
     >
-      <div className="mx-auto max-w-[1480px] px-6 md:px-10 py-20 md:py-28">
+      <div className="mx-auto max-w-[1480px] w-full px-6 md:px-10 py-16 md:py-20">
         <div className={`grid grid-cols-12 gap-6 md:gap-10 items-center ${isImageLeft ? "" : "lg:[direction:rtl]"}`}>
           {/* Image side */}
           <motion.div
@@ -60,14 +60,14 @@ function Project({ p, index }) {
             transition={{ duration: 0.9 }}
             className="col-span-12 lg:col-span-7 [direction:ltr]"
           >
-            <div className="relative aspect-[4/5] md:aspect-[4/4.5] overflow-hidden float-on-hover">
+            <div className="relative w-full flex items-center justify-center float-on-hover">
               <img
                 src={p.img}
                 alt={p.title}
-                className="w-full h-full object-cover"
+                className="w-auto h-auto max-h-[78vh] max-w-full object-contain"
                 data-testid={`project-${p.n}-image`}
               />
-              <span className="absolute top-4 left-4 bg-burgundy text-butter text-[10px] uppercase tracking-[0.28em] px-2.5 py-1 font-sans">
+              <span className="absolute top-3 left-3 md:top-4 md:left-4 bg-burgundy text-butter text-[10px] uppercase tracking-[0.28em] px-2.5 py-1 font-sans">
                 Project · {p.n}
               </span>
             </div>
@@ -81,24 +81,24 @@ function Project({ p, index }) {
             transition={{ duration: 0.9, delay: 0.15 }}
             className="col-span-12 lg:col-span-5 [direction:ltr]"
           >
-            <div className="flex items-baseline gap-4 mb-5">
-              <span className="font-serif italic text-burgundy text-5xl md:text-6xl tabular">{p.n}</span>
-              <span className="font-serif italic text-burgundy/70 text-xl">—</span>
+            <div className="flex items-baseline gap-4 mb-4">
+              <span className="font-serif italic text-burgundy text-4xl md:text-5xl tabular">{p.n}</span>
+              <span className="font-serif italic text-burgundy/70 text-lg">—</span>
               <span className="text-[11px] uppercase tracking-[0.28em] text-charcoal/70 font-sans">{p.year}</span>
             </div>
             <h3
-              className="font-serif text-burgundy text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.02em] mb-5"
+              className="font-serif text-burgundy text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-[-0.02em] mb-4"
               data-testid={`project-${p.n}-title`}
             >
               {p.title}
             </h3>
-            <p className="text-[11px] uppercase tracking-[0.28em] text-burgundy mb-6 font-sans">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-burgundy mb-5 font-sans">
               {p.tag}
             </p>
-            <p className="text-charcoal/85 font-sans text-[15px] md:text-base leading-relaxed max-w-[44ch]">
+            <p className="text-charcoal/85 font-sans text-[14px] md:text-[15px] leading-relaxed max-w-[44ch]">
               {p.body}
             </p>
-            <div className="mt-8 flex items-center gap-3 text-[11px] uppercase tracking-[0.3em] text-burgundy font-sans">
+            <div className="mt-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.3em] text-burgundy font-sans">
               <span className="bg-butter text-burgundy px-2.5 py-1 rounded-full">Case</span>
               <span className="link-underline cursor-default">View visuals ↗</span>
             </div>
