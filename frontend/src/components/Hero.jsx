@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import {
   BowIcon,
   CherriesIcon,
-  LobsterIcon,
+  FlowerIcon as RoseIcon,
   StarfishIcon,
   LemonIcon,
   ShellIcon,
@@ -55,7 +55,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right: moodboard collage — replicating the reference composition */}
+          {/* Right: moodboard collage — replicates the user's reference */}
           <div className="col-span-12 lg:col-span-7 relative">
             <div className="relative w-full aspect-[1/1] max-h-[760px]">
               {/* Sticker */}
@@ -68,7 +68,7 @@ export default function Hero() {
                 ✦ Moodboard
               </motion.div>
 
-              {/* Photo: Beach white top — top center, slight clockwise tilt (BACK) */}
+              {/* Photo: Beach white top — top center (BACK) */}
               <motion.div
                 initial={{ opacity: 0, y: 40, rotate: 4 }}
                 animate={{ opacity: 1, y: 0, rotate: 2 }}
@@ -88,7 +88,7 @@ export default function Hero() {
                 </div>
               </motion.div>
 
-              {/* Photo: Sunset — far left, strong counterclockwise tilt */}
+              {/* Photo: Sunset — far left, tilted left */}
               <motion.div
                 initial={{ opacity: 0, y: 40, rotate: -14 }}
                 animate={{ opacity: 1, y: 0, rotate: -12 }}
@@ -108,7 +108,7 @@ export default function Hero() {
                 </div>
               </motion.div>
 
-              {/* Photo: BW Plaza España — far right, larger, slight clockwise tilt */}
+              {/* Photo: BW Plaza España — right, larger */}
               <motion.div
                 initial={{ opacity: 0, y: 40, rotate: 8 }}
                 animate={{ opacity: 1, y: 0, rotate: 6 }}
@@ -128,7 +128,7 @@ export default function Hero() {
                 </div>
               </motion.div>
 
-              {/* Photo: Sand floor — bottom center, slight counterclockwise tilt (FRONT) */}
+              {/* Photo: Sand floor — bottom center (FRONT) */}
               <motion.div
                 initial={{ opacity: 0, y: 40, rotate: -6 }}
                 animate={{ opacity: 1, y: 0, rotate: -4 }}
@@ -148,30 +148,30 @@ export default function Hero() {
                 </div>
               </motion.div>
 
-              {/* Doodles — matching the reference positions */}
+              {/* Hand-drawn doodles — matching the reference composition */}
               <CherriesIcon
                 className="absolute text-burgundy z-50"
-                style={{ top: "18%", left: "0%", width: "11%", transform: "rotate(-14deg)" }}
+                style={{ top: "16%", left: "0%", width: "11%", transform: "rotate(-10deg)" }}
               />
               <BowIcon
                 className="absolute text-burgundy z-50"
-                style={{ top: "-4%", left: "38%", width: "17%", transform: "rotate(2deg)" }}
+                style={{ top: "-4%", left: "38%", width: "16%", transform: "rotate(2deg)" }}
               />
-              <LobsterIcon
+              <RoseIcon
                 className="absolute text-burgundy z-50"
-                style={{ top: "28%", right: "-4%", width: "14%", transform: "rotate(6deg)" }}
+                style={{ top: "12%", right: "-2%", width: "13%", transform: "rotate(4deg)" }}
               />
               <StarfishIcon
                 className="absolute text-burgundy z-50"
-                style={{ top: "42%", left: "28%", width: "11%", transform: "rotate(-10deg)" }}
+                style={{ top: "42%", left: "28%", width: "11%", transform: "rotate(-8deg)" }}
               />
               <LemonIcon
                 className="absolute text-burgundy z-50"
-                style={{ bottom: "0%", left: "4%", width: "14%", transform: "rotate(-4deg)" }}
+                style={{ bottom: "0%", left: "4%", width: "13%", transform: "rotate(-6deg)" }}
               />
               <ShellIcon
                 className="absolute text-burgundy z-50"
-                style={{ top: "60%", right: "10%", width: "13%", transform: "rotate(6deg)" }}
+                style={{ top: "60%", right: "8%", width: "12%", transform: "rotate(4deg)" }}
               />
             </div>
           </div>
