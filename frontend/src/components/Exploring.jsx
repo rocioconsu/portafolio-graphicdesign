@@ -38,7 +38,6 @@ export default function Exploring() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-14 md:mb-20">
           <div>
             <p className="text-[11px] uppercase tracking-[0.32em] text-butter mb-5 font-sans">
-              <span className="tabular bg-butter text-burgundy px-2 py-1 mr-2">B · 03</span>
               Currently Exploring
             </p>
             <h2 className="font-serif text-ivory text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.02em]">
@@ -56,9 +55,7 @@ export default function Exploring() {
             <article
               key={c.n}
               data-testid={`explore-card-${c.n}`}
-              className={`${c.accent} text-charcoal p-7 md:p-9 flex flex-col justify-between min-h-[300px] md:min-h-[340px] relative overflow-hidden group ${
-                i === 0 ? "lg:row-span-2 lg:min-h-[700px]" : ""
-              }`}
+              className={`${c.accent} text-charcoal p-7 md:p-9 flex flex-col justify-between min-h-[260px] md:min-h-[280px] relative overflow-hidden group`}
             >
               <div className="flex items-start justify-between">
                 <span className="font-serif italic text-burgundy text-xl">{c.n}</span>

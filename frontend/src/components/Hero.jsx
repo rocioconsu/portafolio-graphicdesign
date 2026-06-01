@@ -7,14 +7,7 @@ export default function Hero() {
       data-testid="hero-section"
       className="relative min-h-screen w-full overflow-hidden bg-ivory noise-overlay pt-28 md:pt-32"
     >
-      {/* meta strip */}
-      <div className="absolute top-24 md:top-28 left-0 right-0 px-6 md:px-10 flex justify-between text-[11px] uppercase tracking-[0.28em] text-charcoal/70 font-sans">
-        <span>Portfolio — Vol. 01</span>
-        <span className="hidden md:inline">Madrid · {new Date().getFullYear()}</span>
-        <span>Issue / Designer at Work</span>
-      </div>
-
-      <div className="relative mx-auto max-w-[1480px] px-6 md:px-10 pt-10 md:pt-16">
+      <div className="relative mx-auto max-w-[1480px] px-6 md:px-10 pt-6 md:pt-10">
         {/* Moodboard grid */}
         <div className="grid grid-cols-12 gap-4 md:gap-6 items-start">
           {/* Left big headline column */}
@@ -23,7 +16,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="text-[11px] md:text-xs uppercase tracking-[0.32em] text-burgundy mb-6 md:mb-8 font-sans"
+              className="text-[11px] md:text-xs uppercase tracking-[0.32em] text-burgundy mb-5 md:mb-6 font-sans"
             >
               ✦ Graphic Designer · 3D · Art Direction
             </motion.p>
@@ -35,20 +28,20 @@ export default function Hero() {
               className="font-serif text-burgundy leading-[0.92] tracking-[-0.02em]"
               data-testid="hero-title"
             >
-              <span className="block text-[18vw] sm:text-[14vw] lg:text-[9.5vw]">Hi! I'm</span>
-              <span className="block text-[22vw] sm:text-[17vw] lg:text-[11vw] italic">Rocío</span>
+              <span className="block text-[16vw] sm:text-[12vw] lg:text-[8vw]">Hi! I'm</span>
+              <span className="block text-[20vw] sm:text-[15vw] lg:text-[9.5vw] italic">Rocío</span>
             </motion.h1>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.35 }}
-              className="mt-6 md:mt-8 max-w-md"
+              className="mt-5 md:mt-6 max-w-md"
             >
-              <p className="font-serif italic text-2xl md:text-3xl text-charcoal leading-snug">
+              <p className="font-serif italic text-xl md:text-2xl text-charcoal leading-snug">
                 Graphic Designer
               </p>
-              <p className="mt-4 md:mt-5 text-charcoal/80 text-[15px] md:text-base leading-relaxed font-sans">
+              <p className="mt-3 md:mt-4 text-charcoal/80 text-[14px] md:text-[15px] leading-relaxed font-sans">
                 I create visual identities, 3D experiences and creative projects
                 through design, storytelling and experimentation.
               </p>
@@ -56,7 +49,7 @@ export default function Hero() {
           </div>
 
           {/* Right: moodboard collage */}
-          <div className="col-span-12 lg:col-span-6 relative min-h-[460px] md:min-h-[640px]">
+          <div className="col-span-12 lg:col-span-6 relative min-h-[460px] md:min-h-[580px]">
             <motion.div
               initial={{ opacity: 0, y: 30, rotate: -3 }}
               animate={{ opacity: 1, y: 0, rotate: -4 }}
@@ -111,25 +104,7 @@ export default function Hero() {
             >
               ✦ Moodboard
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.85 }}
-              className="absolute bottom-6 left-[35%] bg-burgundy text-butter text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 rounded-full font-sans rotate-3 hidden md:block"
-            >
-              N°01 — Self portrait
-            </motion.div>
           </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="flex items-end justify-between mt-10 md:mt-16 pb-6">
-          <span className="text-[11px] uppercase tracking-[0.3em] text-charcoal/60 font-sans">
-            Scroll · slowly
-          </span>
-          <span className="text-[11px] uppercase tracking-[0.3em] text-charcoal/60 font-sans tabular">
-            01 / 06
-          </span>
         </div>
       </div>
     </section>

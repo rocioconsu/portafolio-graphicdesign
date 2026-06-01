@@ -117,7 +117,6 @@ export default function Work() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
           <div>
             <p className="text-[11px] uppercase tracking-[0.32em] text-burgundy font-sans mb-5">
-              <span className="tabular bg-burgundy text-butter px-2 py-1 mr-2">C · 04</span>
               Selected Work
             </p>
             <h2 className="font-serif text-burgundy text-[15vw] sm:text-[12vw] lg:text-[10vw] leading-[0.9] tracking-[-0.03em]">

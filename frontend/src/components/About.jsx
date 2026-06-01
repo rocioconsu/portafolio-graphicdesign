@@ -6,7 +6,6 @@ export default function About() {
           {/* Left label */}
           <div className="col-span-12 md:col-span-3">
             <p className="text-[11px] uppercase tracking-[0.32em] text-burgundy font-sans sticky top-32">
-              <span className="tabular text-butter bg-burgundy px-2 py-1 mr-2">A · 02</span>
               About the designer
             </p>
           </div>

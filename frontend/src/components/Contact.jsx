@@ -13,7 +13,6 @@ export default function Contact() {
     <section id="contact" data-testid="contact-section" className="bg-burgundy text-ivory pt-24 md:pt-36 overflow-hidden relative">
       <div className="mx-auto max-w-[1480px] px-6 md:px-10">
         <p className="text-[11px] uppercase tracking-[0.32em] text-butter font-sans mb-8">
-          <span className="tabular bg-butter text-burgundy px-2 py-1 mr-2">D · 05</span>
           Get in touch
         </p>
 
@@ -24,7 +23,7 @@ export default function Contact() {
           Let's create <br /> <span className="italic text-butter">something</span> together.
         </h2>
 
-        <div className="mt-16 md:mt-24 grid grid-cols-12 gap-6 md:gap-10 pb-16 md:pb-20">
+        <div className="mt-16 md:mt-24 grid grid-cols-12 gap-6 md:gap-10 pb-10 md:pb-14">
           <div className="col-span-12 md:col-span-5">
             <p className="font-serif italic text-ivory/85 text-2xl md:text-3xl leading-snug max-w-md">
               Open to brand collaborations, art direction, 3D and creative AI commissions
