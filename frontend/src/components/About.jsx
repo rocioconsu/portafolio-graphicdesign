@@ -34,13 +34,18 @@ export default function About() {
 
           {/* Right portrait */}
           <div className="col-span-12 md:col-span-3 relative">
-            <div className="relative aspect-[3/4] overflow-hidden">
-              <img
-                src="/assets/portrait1.jpg"
-                alt="Rocío Consuegra portrait"
-                className="w-full h-full object-cover"
-                data-testid="about-portrait"
-              />
+            <div className="bg-white p-2.5 pb-8 shadow-[0_22px_50px_-22px_rgba(122,24,54,0.45)] rotate-[-3deg]">
+              <div className="relative aspect-[3/4] overflow-hidden">
+                <img
+                  src="/assets/portrait1.jpg"
+                  alt="Rocío Consuegra portrait"
+                  className="w-full h-full object-cover"
+                  data-testid="about-portrait"
+                />
+              </div>
+              <p className="mt-2 text-center text-[10px] uppercase tracking-[0.25em] text-burgundy font-sans">
+                Rocío · Studio
+              </p>
             </div>
             <div className="mt-3 flex justify-between items-center text-[10px] uppercase tracking-[0.25em] text-charcoal/60 font-sans">
               <span>Rocío C.</span>
