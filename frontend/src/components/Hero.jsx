@@ -49,17 +49,7 @@ export default function Hero() {
 
           {/* Right: moodboard collage — replicates the user's reference */}
           <div className="col-span-12 lg:col-span-7 relative">
-            <div className="relative w-full aspect-[1/1] max-h-[760px]">
-              {/* Sticker */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.85 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.85 }}
-                className="absolute -top-1 left-2 md:left-4 bg-butter text-burgundy text-[10px] md:text-[11px] uppercase tracking-[0.25em] px-3 py-1.5 rounded-full font-sans -rotate-6 z-50"
-              >
-                ✦ Moodboard
-              </motion.div>
-
+            <div className="relative w-full h-[68vh] max-h-[640px] min-h-[460px]">
               {/* Photo: Beach white top — top center (BACK) */}
               <motion.div
                 initial={{ opacity: 0, y: 40, rotate: 4 }}
