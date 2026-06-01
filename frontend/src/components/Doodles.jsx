@@ -146,3 +146,101 @@ export const PenIcon = ({ className = "" }) => (
     <path {...stroke} d="M22 68l10 10" />
   </svg>
 );
+
+export const CherriesIcon = ({ className = "" }) => (
+  <svg viewBox="0 0 100 110" className={className} aria-hidden>
+    {/* stems */}
+    <path {...stroke} d="M30 80 C 36 60, 44 36, 60 18" />
+    <path {...stroke} d="M62 88 C 60 64, 64 38, 64 18" />
+    {/* leaf at top */}
+    <path {...stroke} d="M60 18 C 70 14, 82 18, 86 28 C 78 30, 68 26, 62 22" />
+    <path {...stroke} d="M64 18 C 56 12, 46 14, 42 22 C 50 26, 60 24, 64 22" />
+    {/* cherry 1 (left, lower) */}
+    <circle cx="28" cy="86" r="14" {...stroke} />
+    <path {...stroke} d="M22 80 C 20 84, 22 88, 24 86" />
+    {/* cherry 2 (right) */}
+    <circle cx="62" cy="92" r="14" {...stroke} />
+    <path {...stroke} d="M56 86 C 54 90, 56 94, 58 92" />
+  </svg>
+);
+
+export const LobsterIcon = ({ className = "" }) => (
+  <svg viewBox="0 0 130 120" className={className} aria-hidden>
+    {/* antennae */}
+    <path {...stroke} d="M58 20 C 52 8, 40 4, 30 8" />
+    <path {...stroke} d="M72 20 C 78 8, 90 4, 100 8" />
+    {/* head/body */}
+    <path
+      {...stroke}
+      d="M50 28 C 52 22, 60 18, 65 18 C 70 18, 78 22, 80 28 C 84 36, 84 46, 80 52 C 76 60, 76 70, 78 80 C 80 90, 76 100, 65 104 C 54 100, 50 90, 52 80 C 54 70, 54 60, 50 52 C 46 46, 46 36, 50 28 Z"
+    />
+    {/* tail segments */}
+    <path {...stroke} d="M55 78 C 60 80, 70 80, 75 78" />
+    <path {...stroke} d="M53 86 C 60 88, 70 88, 77 86" />
+    <path {...stroke} d="M55 94 C 60 96, 70 96, 75 94" />
+    {/* claws */}
+    <path {...stroke} d="M50 38 C 30 36, 18 46, 16 60 C 24 64, 36 58, 44 48" />
+    <ellipse cx="18" cy="62" rx="10" ry="7" {...stroke} />
+    <path {...stroke} d="M80 38 C 100 36, 112 46, 114 60 C 106 64, 94 58, 86 48" />
+    <ellipse cx="112" cy="62" rx="10" ry="7" {...stroke} />
+    {/* little legs */}
+    <path {...stroke} d="M50 60 C 42 64, 36 70, 36 78" />
+    <path {...stroke} d="M80 60 C 88 64, 94 70, 94 78" />
+  </svg>
+);
+
+export const StarfishIcon = ({ className = "" }) => (
+  <svg viewBox="0 0 110 110" className={className} aria-hidden>
+    <path
+      {...stroke}
+      d="M55 8 C 58 26, 64 36, 80 38 C 92 40, 100 50, 100 60 C 98 70, 86 76, 78 86 C 72 94, 66 102, 55 102 C 44 102, 38 94, 32 86 C 24 76, 12 70, 10 60 C 10 50, 18 40, 30 38 C 46 36, 52 26, 55 8 Z"
+    />
+    {/* inner dots */}
+    <circle cx="55" cy="40" r="2.5" fill="currentColor" />
+    <circle cx="40" cy="55" r="2.5" fill="currentColor" />
+    <circle cx="70" cy="55" r="2.5" fill="currentColor" />
+    <circle cx="48" cy="74" r="2.5" fill="currentColor" />
+    <circle cx="62" cy="74" r="2.5" fill="currentColor" />
+  </svg>
+);
+
+export const LemonIcon = ({ className = "" }) => (
+  <svg viewBox="0 0 120 110" className={className} aria-hidden>
+    {/* stem + leaf */}
+    <path {...stroke} d="M60 10 C 64 18, 68 26, 72 32" />
+    <path {...stroke} d="M68 16 C 78 12, 90 16, 94 26 C 86 28, 76 24, 72 20" />
+    {/* lemon 1 */}
+    <path
+      {...stroke}
+      d="M40 50 C 26 48, 18 60, 22 76 C 26 92, 44 96, 56 88 C 64 82, 64 64, 56 56 C 52 52, 46 50, 40 50 Z"
+    />
+    <path {...stroke} d="M22 54 C 18 50, 14 50, 12 54" />
+    <path {...stroke} d="M58 90 C 62 94, 66 94, 68 90" />
+    {/* lemon 2 */}
+    <path
+      {...stroke}
+      d="M76 42 C 90 40, 100 52, 98 68 C 96 84, 80 92, 68 86 C 60 82, 58 64, 64 56 C 68 50, 72 44, 76 42 Z"
+    />
+    <path {...stroke} d="M98 46 C 102 42, 106 42, 108 46" />
+    <path {...stroke} d="M66 84 C 62 88, 58 88, 56 84" />
+  </svg>
+);
+
+export const ShellIcon = ({ className = "" }) => (
+  <svg viewBox="0 0 110 100" className={className} aria-hidden>
+    {/* outer shell shape */}
+    <path
+      {...stroke}
+      d="M10 76 C 10 50, 28 14, 55 12 C 82 14, 100 50, 100 76 C 100 86, 90 92, 80 90 C 72 88, 64 86, 55 86 C 46 86, 38 88, 30 90 C 20 92, 10 86, 10 76 Z"
+    />
+    {/* ridges */}
+    <path {...stroke} d="M55 12 C 54 32, 52 60, 48 84" />
+    <path {...stroke} d="M55 12 C 56 32, 58 60, 62 84" />
+    <path {...stroke} d="M40 16 C 36 36, 32 60, 28 86" />
+    <path {...stroke} d="M70 16 C 74 36, 78 60, 82 86" />
+    <path {...stroke} d="M24 30 C 20 50, 16 70, 14 84" />
+    <path {...stroke} d="M86 30 C 90 50, 94 70, 96 84" />
+    {/* hinge */}
+    <path {...stroke} d="M48 12 C 52 8, 58 8, 62 12" />
+  </svg>
+);

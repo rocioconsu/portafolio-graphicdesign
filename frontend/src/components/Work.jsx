@@ -67,9 +67,6 @@ function Project({ p, index }) {
                 className="w-auto h-auto max-h-[78vh] max-w-full object-contain"
                 data-testid={`project-${p.n}-image`}
               />
-              <span className="absolute top-3 left-3 md:top-4 md:left-4 bg-burgundy text-butter text-[10px] uppercase tracking-[0.28em] px-2.5 py-1 font-sans">
-                Project · {p.n}
-              </span>
             </div>
           </motion.div>
 
