@@ -49,10 +49,10 @@ export default function Contact() {
                     data-testid={`contact-link-${c.label.toLowerCase()}`}
                     className="group grid grid-cols-12 items-center gap-4 py-5 md:py-7"
                   >
-                    <span className="col-span-3 md:col-span-2 text-[11px] uppercase tracking-[0.28em] text-butter font-sans">
+                    <span className="col-span-3 md:col-span-2 text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-butter font-sans">
                       {c.label}
                     </span>
-                    <span className="col-span-7 md:col-span-9 font-serif italic text-2xl md:text-4xl text-ivory group-hover:text-butter transition-colors duration-500 truncate">
+                    <span className="col-span-7 md:col-span-9 font-serif italic text-lg sm:text-xl md:text-3xl lg:text-4xl text-ivory group-hover:text-butter transition-colors duration-500 truncate">
                       {c.display}
                     </span>
                     <span className="col-span-2 md:col-span-1 text-right text-ivory/60 group-hover:text-butter transition-colors duration-500 text-xl">

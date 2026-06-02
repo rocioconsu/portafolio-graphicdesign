@@ -48,8 +48,8 @@ export default function Hero() {
           </div>
 
           {/* Right: moodboard collage — replicates the user's reference */}
-          <div className="col-span-12 lg:col-span-7 relative">
-            <div className="relative w-full h-[68vh] max-h-[640px] min-h-[460px]">
+          <div className="col-span-12 lg:col-span-7 relative mt-2 lg:mt-0">
+            <div className="relative w-full h-[62vw] sm:h-[58vw] lg:h-[68vh] max-h-[640px] min-h-[380px]">
               {/* Photo: Beach white top — top center (BACK) */}
               <motion.div
                 initial={{ opacity: 0, y: 40, rotate: 4 }}

@@ -33,8 +33,8 @@ export default function About() {
           </div>
 
           {/* Right portrait */}
-          <div className="col-span-12 md:col-span-3 relative">
-            <div className="bg-white p-2.5 pb-8 shadow-[0_22px_50px_-22px_rgba(122,24,54,0.45)] rotate-[-3deg]">
+          <div className="col-span-12 md:col-span-3 relative flex justify-center md:block">
+            <div className="bg-white p-2.5 pb-8 shadow-[0_22px_50px_-22px_rgba(122,24,54,0.45)] rotate-[-3deg] max-w-[260px] md:max-w-none w-full">
               <div className="relative aspect-[3/4] overflow-hidden">
                 <img
                   src="/assets/portrait1.jpg"

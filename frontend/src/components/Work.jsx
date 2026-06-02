@@ -48,9 +48,9 @@ function Project({ p, index }) {
   return (
     <article
       data-testid={`project-${p.n}`}
-      className={`${p.bg} relative overflow-hidden min-h-screen flex items-center`}
+      className={`${p.bg} relative overflow-hidden lg:min-h-screen flex items-center`}
     >
-      <div className="mx-auto max-w-[1480px] w-full px-6 md:px-10 py-16 md:py-20">
+      <div className="mx-auto max-w-[1480px] w-full px-6 md:px-10 py-14 md:py-20">
         <div className={`grid grid-cols-12 gap-6 md:gap-10 items-center ${isImageLeft ? "" : "lg:[direction:rtl]"}`}>
           {/* Image side */}
           <motion.div
@@ -64,7 +64,7 @@ function Project({ p, index }) {
               <img
                 src={p.img}
                 alt={p.title}
-                className="w-auto h-auto max-h-[78vh] max-w-full object-contain"
+                className="w-auto h-auto max-h-[55vh] md:max-h-[70vh] lg:max-h-[78vh] max-w-full object-contain"
                 data-testid={`project-${p.n}-image`}
               />
             </div>
