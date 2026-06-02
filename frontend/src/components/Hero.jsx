@@ -17,7 +17,7 @@ export default function Hero() {
               transition={{ duration: 0.7 }}
               className="text-[11px] md:text-xs uppercase tracking-[0.32em] text-burgundy mb-5 md:mb-6 font-sans"
             >
-              ✦ Graphic Designer · 3D · Art Direction
+              ✦ CURIOSITY · CREATIVITY · EXPERIMENTATION
             </motion.p>
 
             <motion.h1
